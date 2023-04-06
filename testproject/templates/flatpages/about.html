@@ -1,0 +1,16 @@
+
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+    <h2>{{ flatpage.title }}</h2>
+    <hr>
+    <h2>THIS IS 'ABOUT' PAGE</h2>
+    <hr>
+    <button onclick="window.location.href = 'http://127.0.0.1:8000/contacts/';">Contacts</button>
+{{ flatpage.content }}
+{{ flatpage.content }}
+{% endblock content %}
